@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=IM+Fell+DW+Pica:ital@0;1&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      function setNewImage1() {
+        document.getElementById("img1").src = "img/png/ommig_knap_2.png";
+      }
+      function setOldImage1() {
+        document.getElementById("img1").src = "img/png/ommig_knap_1.png";
+      }
+      function setNewImage2() {
+        document.getElementById("img2").src = "img/png/portfolio_knap_2.png";
+      }
+      function setOldImage2() {
+        document.getElementById("img2").src = "img/png/portfolio_knap_1.png";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="header_logo">
+          <a href="index.html"><img src="img/png/logo.png" /></a>
+        </li>
+        <li class="header_knap">
+          <a href="ommig.html"
+            ><img
+              id="img1"
+              onmouseover="setNewImage1()"
+              onmouseout="setOldImage1()"
+              src="img/png/ommig_knap_1.png"
+              alt=""
+          /></a>
+        </li>
+        <li class="header_knap">
+          <a href="portfolio.html"
+            ><img
+              id="img2"
+              onmouseover="setNewImage2()"
+              onmouseout="setOldImage2()"
+              src="img/png/portfolio_knap_1.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="portfolio_wrapper">
+        <div class="tema_2">
+          <a
+            href="https://lehmannen.dk/kea/02_web/04_responsive/responsive_site_v2/index.html"
+            ><img src="img/png/tema_2.png" alt=""
+          /></a>
+        </div>
+        <div class="tema_3">
+          <a href="https://lehmannen.dk/kea/03_ux/site/index.html"
+            ><img src="img/png/tema_3.png" alt=""
+          /></a>
+        </div>
+        <div class="tema_4">
+          <a href="http://lehmannen.dk/kea/04_animation/game_site/"
+            ><img src="img/png/tema_4.png" alt=""
+          /></a>
+        </div>
+        <div class="tema_5">
+          <a href="https://loving-shannon-4f8180.netlify.app/"
+            ><img src="img/png/tema_5.png" alt=""
+          /></a>
+        </div>
+        <div class="steenen">
+          <a href="http://lehmannen.dk/kea/05_indhold/site/index.html"
+            ><img src="img/png/tema_bonus.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer_txt">
+          <h3 class="footerh3">Contact</h3>
+          <p class="footerp">
+            Email: sylledejlig@gmail.com <br />
+            Phone: 22 27 07 31 <br />
+            Instagram:
+            <a href="instagram.com/sylle_sexbang">sylle sexbang</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=IM+Fell+DW+Pica:ital@0;1&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      function setNewImage1() {
+        document.getElementById("img1").src = "img/png/ommig_knap_2.png";
+      }
+      function setOldImage1() {
+        document.getElementById("img1").src = "img/png/ommig_knap_1.png";
+      }
+      function setNewImage2() {
+        document.getElementById("img2").src = "img/png/portfolio_knap_2.png";
+      }
+      function setOldImage2() {
+        document.getElementById("img2").src = "img/png/portfolio_knap_1.png";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="header_logo">
+          <a href="index.html"><img src="img/png/logo.png" /></a>
+        </li>
+        <li class="header_knap">
+          <a href="ommig.html"
+            ><img
+              id="img1"
+              onmouseover="setNewImage1()"
+              onmouseout="setOldImage1()"
+              src="img/png/ommig_knap_1.png"
+              alt=""
+          /></a>
+        </li>
+        <li class="header_knap">
+          <a href="portfolio.html"
+            ><img
+              id="img2"
+              onmouseover="setNewImage2()"
+              onmouseout="setOldImage2()"
+              src="img/png/portfolio_knap_1.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div id="about_me">
+        <div class="about_me_container">
+          <div class="bubble">
+            <img src="img/png/talebobel.png" alt="" />
+          </div>
+          <div class="about_me_txt">
+            <p>
+              Jeg hedder Sylvester Lehmann Jakobsen. Jeg er 23 år gammel og
+              studerer multimediedesign på KEA. indtil videre har jeg lært at
+              bruge grundlæggende HTML, CSS og JS til at skabe hjemmesider. Jeg
+              er blevet intruduceret for Adobe Photoshop, Illustrator, XD og
+              Primiere Pro. Jeg synes det er sjovest at kombinere alle mine
+              færdigheder på tværs af software og kodning og samle det hele til
+              et endeligt produkt.
+            </p>
+          </div>
+          <div class="portrait">
+            <img src="img/png/portræt_tape.png" alt="" />
+          </div>
+        </div>
+        <div class="about_me_container_2">
+          <div class="computer">
+            <img src="img/png/computer.png" alt="" />
+          </div>
+          <div class="about_me_txt_2">
+            <p>
+              Jeg kan bedst lide at bruge photoshop. Der er rig mulighed for at
+              eksperimentere og prøve sig frem. Jeg kan bruge rigtig lang tid på
+              bare at sidde og lege med alle redskaberne prøve nye ting. Det har
+              jeg også gjort meget på denne opgave, måske mere tid end jeg burde
+              have.
+            </p>
+          </div>
+        </div>
+        <div class="about_me_container_3">
+          <div class="about_me_txt_3">
+            <p>
+              Hvis du gerne vil vide mere så kig endelig mit CV og tag et kig på
+              hvad ellers jeg kan byde på. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Beatae quos accusamus, doloremque
+              veniam dignissimos ipsum, optio voluptate sint ab cum at hic fugit
+              quo, enim nulla voluptatem aliquam est tempora. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Et, ex.
+            </p>
+          </div>
+          <div class="cv_link">
+            <a href="CIRRICULUMVITAE.docx.html"
+              ><img src="img/png/cv_bog.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer_txt">
+          <h3 class="footerh3">Contact</h3>
+          <p class="footerp">
+            Email: sylledejlig@gmail.com <br />
+            Phone: 22 27 07 31 <br />
+            Instagram:
+            <a href="instagram.com/sylle_sexbang">sylle sexbang</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

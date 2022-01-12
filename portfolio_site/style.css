@@ -1,0 +1,317 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-image: url("img/png/background.jpg");
+  background-size: 100% auto;
+}
+
+/* FONTS AND TXT */
+/*     
+font-family: "Gloria Hallelujah", cursive;
+
+font-family: "IM Fell DW Pica", serif;
+
+font-family: 'Permanent Marker', cursive; 
+*/
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h3 {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+p {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+a {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+/* HEADER */
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 4rem;
+  list-style: none;
+}
+
+.header_knap {
+  width: 15rem;
+}
+
+.header_logo {
+  width: 50rem;
+}
+
+@media (max-width: 650px) {
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .header_knap {
+    width: 8rem;
+  }
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 250px;
+  background-image: url("img/png/footerBG.png");
+  background-size: 100% 100%;
+
+  bottom: 0;
+}
+footer a {
+  color: #d3f36c;
+  font-size: 20px;
+  text-shadow: black 2px 2px;
+}
+footer p {
+  color: #d3f36c;
+  font-size: 20px;
+  text-shadow: black 2px 2px;
+}
+footer h3 {
+  color: #d3f36c;
+  font-size: 20px;
+  text-shadow: black 2px 2px;
+}
+
+.footer_txt {
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+/* INDEX */
+
+#index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  gap: 10rem;
+}
+
+.hello {
+  display: flex;
+}
+
+.portf {
+  display: flex;
+}
+
+@media (max-width: 1420px) {
+  #index {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 875px) {
+  #index {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    gap: 0rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+}
+
+/* ABOUT ME */
+
+#about_me {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 0rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10rem;
+}
+
+.about_me_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.bubble {
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+
+.about_me_txt {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+#about_me p {
+  font-size: 30px;
+}
+
+.portrait {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+
+.about_me_container_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about_me_container_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 160px;
+}
+
+.cv_link {
+  max-width: 600px;
+}
+
+@media (min-width: 2200px) {
+  #about_me p {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1700px) {
+  #about_me p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1460px) {
+  #about_me p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1250px) {
+  #about_me p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #about_me p {
+    font-size: 16px;
+  }
+  #about_me {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 920px) {
+  #about_me p {
+    font-size: 20px;
+  }
+  #about_me {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 0rem;
+  }
+  .about_me_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .about_me_txt {
+    order: -1;
+  }
+
+  .bubble {
+    display: none;
+  }
+
+  .portrait {
+    max-width: 400px;
+  }
+
+  .about_me_container_2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_me_container_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cv_link {
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+/* PORTFOLIO */
+
+.portfolio_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.steenen {
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+@media (max-width: 650px) {
+  .portfolio_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .portfolio_wrapper {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .portfolio_wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+/* hvordan kan jeg bedre sætte et grid op? Jeg har problemer med at billeder og tekst skubber til hinanden? Og hvis jeg vil have mere whitespace (margin) så ender mit billede med at scale sig selv LILLEBITTE. */
